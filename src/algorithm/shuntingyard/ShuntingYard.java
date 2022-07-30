@@ -52,6 +52,8 @@ public class ShuntingYard {
                 exponentFound = true;
             }
         }
+        if(exponentFound)
+            result.append('^');
         AppendOperandStack(result, stack);
         return result;
     }

@@ -34,4 +34,12 @@ class ShuntingYardTest {
         String  result = sy.Shunt(input).toString();
         assertEquals(expected, result);
     }
+
+    @org.junit.jupiter.api.Test
+    void shunt4() {
+        String input = "3-4*7+5^2";
+        String expected = "347*-52^+";
+        String  result = sy.Shunt(input).toString();
+        assertEquals(expected, result);
+    }
 }
